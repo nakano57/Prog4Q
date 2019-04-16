@@ -1,0 +1,29 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "echo",
+      "type": "shell",
+      "command": "clang",
+      "args": [
+        "-g",
+        "write.o",
+        "read.o",
+        "negaposi.o",
+        "rotation.o",
+        "check.o",
+        "cut.o",
+        "${file}",
+        "-o0",
+        "-o",
+        "a.out",
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+    }
+  ]
+}
